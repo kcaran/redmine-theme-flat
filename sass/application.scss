@@ -334,3 +334,14 @@ a.user {
 	white-space: nowrap;
 }
 
+table.list td {
+	padding: 4px 10px 4px 4px;
+}
+
+a.project.closed, a.project.closed:link, a.project.closed:visited {
+	color: #666666;
+}
+
+.attachments_fields input.filename, #existing-attachments .filename {
+	padding-left: 20px;
+}

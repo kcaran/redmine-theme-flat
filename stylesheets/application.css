@@ -521,7 +521,7 @@ code {
     font-weight: 300;
     border-top: 3px solid #202020;
     padding: 4px 15px 7px;
-    transition: border-color .5s; }
+    transition: border-color .25s; }
     #main-menu li a.selected, #main-menu li a:hover {
       border-top: 3px solid #d92e47;
       background: transparent; }
@@ -673,5 +673,14 @@ td.assigned_to {
 
 a.user {
   white-space: nowrap; }
+
+table.list td {
+  padding: 4px 10px 4px 4px; }
+
+a.project.closed, a.project.closed:link, a.project.closed:visited {
+  color: #666666; }
+
+.attachments_fields input.filename, #existing-attachments .filename {
+  padding-left: 20px; }
 
 /*# sourceMappingURL=application.css.map */
