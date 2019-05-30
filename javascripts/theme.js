@@ -3,6 +3,7 @@
   $(document).ready(function() {
     var update = $('#update')
     var close = $("<div>", {'class': "update-close"}).text('x');
+    update.draggable();
 
     update.prepend(close);
     close.click(function() {

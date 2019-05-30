@@ -331,31 +331,31 @@ optgroup {
 .ie6_input_disabled {
   background: #eeeeee; }
 
+/*
 tr.odd.priority-highest,
 table.list tbody tr.odd.priority-highest:hover {
   color: #900;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 tr.odd.priority-highest {
-  background: #ffc4c4; }
-
+  background: #ffc4c4;
+}
 tr.even.priority-highest,
 table.list tbody tr.even.priority-highest:hover {
   color: #900;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 tr.even.priority-highest {
-  background: #ffd4d4; }
-
+  background: #ffd4d4;
+}
 tr.priority-highest a,
 tr.priority-highest:hover a {
-  color: #900; }
-
+  color: #900;
+}
 tr.odd.priority-highest td,
 tr.even.priority-highest td {
-  border-color: #ffb4b4; }
-
-/*
+  border-color: #ffb4b4;
+}
 tr.odd.priority-high2,
 table.list tbody tr.odd.priority-high2:hover {
   color: #900;
@@ -404,26 +404,39 @@ tr.odd.priority-lowest,
 tr.even.priority-lowest,
   color: #559;
 }
-*/
 table.list tbody tr.odd.priority-lowest:hover,
 table.list tbody tr.even.priority-lowest:hover {
-  background-color: #ffffdd; }
-
+	background-color: #ffffdd;
+}
 tr.odd.priority-lowest {
-  background: #eaf7ff; }
-
+  background: #eaf7ff;
+}
 tr.even.priority-lowest {
-  background: #f2faff; }
-
+  background: #f2faff;
+}
 tr.priority-lowest a {
-  color: #559; }
-  tr.priority-lowest a:hover {
-    opacity: 0.8;
-    color: inherit; }
-
+  color: #559;
+	&:hover {
+		opacity: 0.8;
+  		color: inherit;
+	}
+}
 tr.odd.priority-lowest td,
 tr.even.priority-lowest td {
-  border-color: #add7f3; }
+  border-color: #add7f3;
+}
+*/
+table.list tbody tr.priority-highest {
+  color: #900;
+  font-weight: bold; }
+
+tr.priority-lowest {
+  color: #559; }
+  tr.priority-lowest a {
+    color: #559; }
+    tr.priority-lowest a:hover {
+      opacity: 0.8;
+      color: inherit; }
 
 body {
   font: normal 14px/1.5 'Open Sans', sans-serif;
@@ -675,12 +688,26 @@ a.user {
   white-space: nowrap; }
 
 table.list td {
-  padding: 4px 10px 4px 4px; }
+  padding: 4px 10px 4px 4px;
+  vertical-align: top; }
+
+table.list td.assigned_to {
+  text-align: left; }
+
+table.list td.spent_hours {
+  text-align: right;
+  position: absolute;
+  right: 50px; }
 
 a.project.closed, a.project.closed:link, a.project.closed:visited {
   color: #666666; }
 
 .attachments_fields input.filename, #existing-attachments .filename {
   padding-left: 20px; }
+
+textarea {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 20px; }
 
 /*# sourceMappingURL=application.css.map */

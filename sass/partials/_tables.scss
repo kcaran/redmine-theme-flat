@@ -1,3 +1,4 @@
+/*
 tr.odd.priority-highest,
 table.list tbody tr.odd.priority-highest:hover {
   color: #900;
@@ -22,7 +23,6 @@ tr.odd.priority-highest td,
 tr.even.priority-highest td {
   border-color: #ffb4b4;
 }
-/*
 tr.odd.priority-high2,
 table.list tbody tr.odd.priority-high2:hover {
   color: #900;
@@ -71,7 +71,6 @@ tr.odd.priority-lowest,
 tr.even.priority-lowest,
   color: #559;
 }
-*/
 table.list tbody tr.odd.priority-lowest:hover,
 table.list tbody tr.even.priority-lowest:hover {
 	background-color: #ffffdd;
@@ -92,4 +91,19 @@ tr.priority-lowest a {
 tr.odd.priority-lowest td,
 tr.even.priority-lowest td {
   border-color: #add7f3;
+}
+*/
+table.list tbody tr.priority-highest {
+  color: #900;
+  font-weight: bold;
+}
+tr.priority-lowest {
+	color: #559;
+	a {
+		color: #559;
+		&:hover {
+			opacity: 0.8;
+  			color: inherit;
+		}
+	}
 }

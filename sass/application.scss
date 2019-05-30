@@ -336,6 +336,17 @@ a.user {
 
 table.list td {
 	padding: 4px 10px 4px 4px;
+	vertical-align: top;
+}
+
+table.list td.assigned_to {
+	text-align: left;
+}
+
+table.list td.spent_hours {
+	text-align: right;
+	position: absolute;
+	right: 50px;
 }
 
 a.project.closed, a.project.closed:link, a.project.closed:visited {
@@ -344,4 +355,10 @@ a.project.closed, a.project.closed:link, a.project.closed:visited {
 
 .attachments_fields input.filename, #existing-attachments .filename {
 	padding-left: 20px;
+}
+
+textarea {
+	padding: 12px;
+	font-size: 14px;
+	line-height: 20px;
 }
