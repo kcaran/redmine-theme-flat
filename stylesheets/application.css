@@ -448,11 +448,11 @@ h1, h2, h3, h4 {
   font-weight: 300; }
 
 a, a:link, a:visited {
-  color: #d92e47;
+  color: #169;
   transition: color .25s; }
   a:hover, a:link:hover, a:visited:hover {
     text-decoration: none;
-    color: #ed9aa6; }
+    color: #1685c7; }
   th a, th a:link, th a:visited {
     color: #484848; }
 
@@ -686,9 +686,14 @@ td.assigned_to {
 
 a.user {
   white-space: nowrap; }
+  .journal a.user {
+    white-space: nowrap;
+    font-weight: bold; }
+    .journal a.user + a[href^="/projects"] {
+      font-weight: bold; }
 
 table.list td {
-  padding: 4px 10px 4px 4px;
+  padding: 5px 10px 5px 5px;
   vertical-align: top; }
 
 table.list td.assigned_to {
