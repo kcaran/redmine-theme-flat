@@ -374,3 +374,9 @@ textarea {
 	font-size: 14px;
 	line-height: 20px;
 }
+
+/* Hide new elements (toggle button and flyout menu) above 900px */
+.mobile-toggle-button,
+.flyout-menu {
+  display: none;
+}
