@@ -79,8 +79,8 @@ input[type="submit"],
 input[type="button"] {
   -webkit-appearance: none;
   background-clip: padding-box;
-  background: $hotpink;
-  border: none;
+  background: $blue-bright;
+  border: solid 1px transparent;
   // border-color: #dddddd #bbbbbb #999999;
   cursor: pointer;
   color: #fff;
@@ -93,15 +93,17 @@ input[type="button"] {
   margin: 0;
   padding: 0 15px;
   line-height: 2;
+  border-radius: 5px;
   text-shadow: none;
   text-decoration: none;
   vertical-align: top;
   width: auto;
-  transition: all .5s;
+  transition: all .3s;
   &:hover,
   &:active {
     background: #fff;
-    color: $hotpink;
+    border: solid 1px $blue-bright;
+    color: $blue-bright;
   }
   // IE7
   *padding-top: 2px;
