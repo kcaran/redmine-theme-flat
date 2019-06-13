@@ -67,8 +67,8 @@ input[type="submit"],
 input[type="button"] {
   -webkit-appearance: none;
   background-clip: padding-box;
-  background: #d92e47;
-  border: none;
+  background: #1e76d0;
+  border: solid 1px transparent;
   cursor: pointer;
   color: #fff;
   display: inline-block;
@@ -78,11 +78,12 @@ input[type="button"] {
   margin: 0;
   padding: 0 15px;
   line-height: 2;
+  border-radius: 5px;
   text-shadow: none;
   text-decoration: none;
   vertical-align: top;
   width: auto;
-  transition: all .5s;
+  transition: all .3s;
   *padding-top: 2px;
   *padding-bottom: 0; }
   button:hover, button:active,
@@ -95,7 +96,8 @@ input[type="button"] {
   input[type="button"]:hover,
   input[type="button"]:active {
     background: #fff;
-    color: #d92e47; }
+    border: solid 1px #1e76d0;
+    color: #1e76d0; }
   button::-moz-focus-inner,
   a.button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
@@ -468,7 +470,7 @@ code {
 #top-menu {
   background: #2d2d2d;
   height: auto;
-  border-bottom: 1px solid #3a3a3a; }
+  border-bottom: 1px solid #f3c60a; }
   #top-menu:after {
     content: "";
     display: table;
@@ -487,7 +489,7 @@ code {
 #header {
   height: auto;
   min-height: 4em;
-  background: #202020;
+  background: #1e76d0;
   padding: 14px 17px 0 17px; }
   #header > h1,
   #header > h1:before {
@@ -510,7 +512,7 @@ code {
 
 #quick-search input, #quick-search #q {
   width: 260px;
-  background-color: #2d2d2d;
+  background-color: #689dd7;
   border: none;
   color: #FFF;
   padding: 0px 6px;
@@ -532,15 +534,21 @@ code {
     clear: both; }
   #main-menu li a {
     font-weight: 300;
-    border-top: 3px solid #202020;
+    border-top: 3px solid transparent;
     padding: 4px 15px 7px;
     transition: border-color .25s; }
     #main-menu li a.selected, #main-menu li a:hover {
-      border-top: 3px solid #d92e47;
+      border-top: 3px solid #f3c60a;
       background: transparent; }
     #main-menu li a.selected {
       font-weight: 400;
       background: #fff; }
+    #main-menu li a.new-object {
+      background-color: #689dd7; }
+  #main-menu .menu-children li a {
+    border: 0; }
+    #main-menu .menu-children li a:hover {
+      border: 0; }
 
 #main:after {
   content: "";
@@ -701,8 +709,7 @@ table.list td.assigned_to {
 
 table.list td.spent_hours {
   text-align: right;
-  position: absolute;
-  right: 50px; }
+  padding-right: 16px; }
 
 a.project.closed, a.project.closed:link, a.project.closed:visited {
   color: #666666; }
@@ -714,5 +721,10 @@ textarea {
   padding: 12px;
   font-size: 14px;
   line-height: 20px; }
+
+/* Hide new elements (toggle button and flyout menu) above 900px */
+.mobile-toggle-button,
+.flyout-menu {
+  display: none; }
 
 /*# sourceMappingURL=application.css.map */
