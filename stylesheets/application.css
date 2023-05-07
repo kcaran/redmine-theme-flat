@@ -503,7 +503,8 @@ code {
     width: 64px; }
 
 #quick-search form {
-  display: block; }
+  display: block;
+  float: none; }
 
 #quick-search select {
   padding: 5px 15px 5px 5px;
@@ -726,5 +727,15 @@ textarea {
 .mobile-toggle-button,
 .flyout-menu {
   display: none; }
+
+#projects-index ul.projects div.root a.project, a.project.child {
+  font-size: 20px; }
+
+#projects-index a.icon-user, a.icon-bookmarked-project {
+  padding-right: 32px;
+  background-position: 98% 60%; }
+
+.projects .wiki h2 {
+  font-size: 20px; }
 
 /*# sourceMappingURL=application.css.map */
