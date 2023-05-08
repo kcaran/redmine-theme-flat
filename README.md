@@ -12,7 +12,7 @@ Flat theme for Redmine
 
 ## Make it yours
 
-The theme is made with Sass & Compass so changing colors etc. should be very easy,
+The theme is made with Sass so changing colors etc. should be very easy,
 Colors are defined in the top of /sass/application.scss
 
 ## License

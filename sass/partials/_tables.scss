@@ -107,3 +107,26 @@ tr.priority-lowest {
 		}
 	}
 }
+
+table.list {
+	td.activity {
+		white-space: nowrap;
+		min-width: 120px;
+	}
+
+	th.user, td.user {
+		text-align: left;
+	}
+
+	th.issue, td.issue {
+		text-align: left;
+	}
+
+	th.comments, td.comments {
+		text-align: left;
+	}
+
+	th.hours, td.hours {
+		text-align: right;
+	}
+}

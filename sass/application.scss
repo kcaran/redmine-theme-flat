@@ -17,14 +17,16 @@
   }
 }
 
-$gray-dark: #202020;
-$gray-text: #484848;
-$hotpink: #d92e47;
-$blue: #169;
-$blue-bright: #1e76d0;
-$blue-light: #689dd7;
-$blue-dark: #394a59;
-$orange: #f3c60a;
+$atlantic:	#003651;
+$charcoal:	#394a59;
+$denim:		#0079b6;
+$harbor:	#004c73;
+$heatwave:	#ff7b00;
+$igloo:		#eaf8ff;
+$lemon:		#eaba0a;
+$silver:	#e1e4e6;
+$tomato:	#d92e47;
+$raceway:	#0085c8;
 
 @import "partials/formalize";
 @import "partials/tables";
@@ -32,7 +34,7 @@ $orange: #f3c60a;
 body {
   font: normal 14px/1.5 'Open Sans', sans-serif;
   font-size: 14px;
-  color: $gray-text;
+  color: $charcoal;
 }
 
 h1, h2, h3, h4 {
@@ -41,14 +43,14 @@ h1, h2, h3, h4 {
 }
 
 a, a:link, a:visited {
-  color: $blue;
+  color: $denim;
   transition: color .25s;
   &:hover {
     text-decoration: none;
-    color: lighten($blue, 10%);
+    color: lighten($denim, 10%);
   }
   th & {
-    color: $gray-text;
+    color: $charcoal;
   }
 }
 
@@ -65,10 +67,10 @@ code {
 
 // Top menu bar
 #top-menu {
-  background: lighten($gray-dark, 5%);
+  background: $harbor;
   height: auto;
   @include pie-clearfix;
-  border-bottom: 1px solid $orange;
+  border-bottom: 1px solid $lemon;
   li {
     padding: 0 10px;
     a {
@@ -89,7 +91,7 @@ code {
 #header {
   height: auto;
   min-height: 4em;
-  background: $blue-bright;
+  background: $raceway;
   padding: 14px 17px 0 17px;
   > h1,
   > h1:before {
@@ -119,9 +121,9 @@ code {
   }
   input, #q {
 	width: 260px;
-    background-color: $blue-light;
+    background-color: $silver;
     border: none;
-    color: #FFF;
+    color: $charcoal;
     padding: 0px 6px;
     height: 2.4em;
     margin-left: 4px;
@@ -147,7 +149,7 @@ code {
       transition: border-color .25s;
       &.selected,
       &:hover {
-        border-top: 3px solid $orange;
+        border-top: 3px solid $lemon;
         background: transparent;
       }
       &.selected {
@@ -155,11 +157,11 @@ code {
         background: #fff;
       }
       &.new-object {
-        background-color: $blue-light;
+        background-color: $denim;
       }
     }
   }
-  .menu-children 
+  .menu-children
   {
   li {
     a {
@@ -225,7 +227,7 @@ div.issue {
   }
   .update-close {
     float: right;
-    border: 1px solid $gray-text;
+    border: 1px solid $charcoal;
     line-height: 0.5;
     font-size: 25px;
     padding: 0 1px 6px;
@@ -234,17 +236,17 @@ div.issue {
     cursor: pointer;
     transition: all .5s;
     &:hover {
-      background-color: $gray-text;
+      background-color: $charcoal;
       color: #fff;
     }
   }
   fieldset.tabular {
     legend {
       cursor: pointer;
-      color: $hotpink;
+      color: $tomato;
       transition: color .5s;
       &:hover {
-        color: lighten($hotpink, 25%);
+        color: lighten($tomato, 25%);
       }
     }
     legend small,
@@ -352,16 +354,14 @@ td.assigned_to {
 
 a.user {
   white-space: nowrap;
-  
+
   .journal &  {
       white-space: nowrap;
       font-weight: bold;
-    
+
       & + a[href^="/projects"] {
         font-weight: bold;
       }
-    
-    
     }
 }
 
@@ -393,16 +393,39 @@ textarea {
 	line-height: 20px;
 }
 
+fieldset label:first-of-type {
+	margin-left: 0;
+}
+
+fieldset label {
+	margin-left: 32px;
+	margin-right: 4px;
+}
+
+fieldset input[type="submit"] {
+	margin-left: 16px;
+	margin-right: 4px;
+	line-height: 1;
+	position: relative;
+	top: 4px;
+}
+
 /* Hide new elements (toggle button and flyout menu) above 900px */
 .mobile-toggle-button,
 .flyout-menu {
   display: none;
 }
 
-#projects-index ul.projects div.root a.project, a.project.child {
+#projects-index ul.projects div.root a.project {
 	font-size: 20px;
+	font-family: inherit;
+	font-weight: 600;
 }
 
+a.project.child {
+	font-size: 18px;
+	font-weight: 600;
+}
 
 #projects-index a.icon-user, a.icon-bookmarked-project {
 	padding-right: 32px;
@@ -411,4 +434,8 @@ textarea {
 
 .projects .wiki h2 {
 	font-size: 20px;
+}
+
+.contextual {
+	font-size: 1rem;
 }

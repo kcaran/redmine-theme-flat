@@ -79,7 +79,7 @@ input[type="submit"],
 input[type="button"] {
   -webkit-appearance: none;
   background-clip: padding-box;
-  background: $blue-bright;
+  background: $denim;
   border: solid 1px transparent;
   // border-color: #dddddd #bbbbbb #999999;
   cursor: pointer;
@@ -102,8 +102,8 @@ input[type="button"] {
   &:hover,
   &:active {
     background: #fff;
-    border: solid 1px $blue-bright;
-    color: $blue-bright;
+    border: solid 1px $denim;
+    color: $denim;
   }
   // IE7
   *padding-top: 2px;
