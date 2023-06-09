@@ -105,9 +105,6 @@ input[type="button"] {
     border: solid 1px $denim;
     color: $denim;
   }
-  // IE7
-  *padding-top: 2px;
-  *padding-bottom: 0;
   // Kill phantom spacing and dotted
   // border that appears in Firefox.
   &::-moz-focus-inner {
@@ -116,20 +113,7 @@ input[type="button"] {
   }
   + a {
     font-size: 16px;
-    padding: 0 15px;
-    line-height: 2;
   }
-}
-
-a.button {
-  // IE7
-  *padding-bottom: 3px;
-}
-
-button {
-  // IE7
-  *padding-top: 1px;
-  *padding-bottom: 1px;
 }
 
 textarea,

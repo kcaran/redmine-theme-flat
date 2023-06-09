@@ -2,7 +2,7 @@
 @import url('../../../stylesheets/application.css');
 
 // Open Sans
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 /* Box sizing */
 *, *:before, *:after {
@@ -24,6 +24,7 @@ $harbor:	#004c73;
 $heatwave:	#ff7b00;
 $igloo:		#eaf8ff;
 $lemon:		#eaba0a;
+$sheffield:	#697682;
 $silver:	#e1e4e6;
 $tomato:	#d92e47;
 $raceway:	#0085c8;
@@ -39,7 +40,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 a, a:link, a:visited {
@@ -55,7 +56,11 @@ a, a:link, a:visited {
 }
 
 th {
-  font-weight: 300;
+  font-weight: 600;
+}
+
+pre, code {
+	font-family: "Liberation Mono", Menlo, Consolas, Courier, monospace;
 }
 
 code {
@@ -63,6 +68,13 @@ code {
   font-size: 85%;
   background-color: #fafafa;
   border: 1px solid #e2e2e2;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  background-color: unset;
+  border: none;
 }
 
 // Top menu bar
@@ -99,6 +111,7 @@ code {
   }
   > h1 {
     margin: 0 20px 2px 9px;
+	font-weight: 400;
   }
   > h1:before {
     content: url('../images/safety_logo.svg');
@@ -143,7 +156,6 @@ code {
   @include pie-clearfix;
   li {
     a {
-      font-weight: 300;
       border-top: 3px solid transparent;
       padding: 4px 15px 7px;
       transition: border-color .25s;
@@ -231,7 +243,6 @@ div.issue {
     line-height: 0.5;
     font-size: 25px;
     padding: 0 1px 6px;
-    font-weight: 300;
     margin-right: -10px;
     cursor: pointer;
     transition: all .5s;
@@ -314,6 +325,11 @@ select[multiple="multiple"] {
     padding: 0;
 }
 
+/* Don't show jquery-ui tooltips! */
+.ui-tooltip {
+	visibility: hidden;
+}
+
 table.list td.project {
     max-width: 200px;
     overflow: hidden;
@@ -393,6 +409,10 @@ textarea {
 	line-height: 20px;
 }
 
+input[type="submit"] {
+	line-height: 1;
+}
+
 fieldset label:first-of-type {
 	margin-left: 0;
 }
@@ -405,9 +425,13 @@ fieldset label {
 fieldset input[type="submit"] {
 	margin-left: 16px;
 	margin-right: 4px;
-	line-height: 1;
 	position: relative;
 	top: 4px;
+}
+
+fieldset.tabular label {
+	width: 156px;
+	margin-left: -180px;
 }
 
 /* Hide new elements (toggle button and flyout menu) above 900px */
@@ -432,10 +456,22 @@ a.project.child {
 	background-position: 98% 60%;
 }
 
-.projects .wiki h2 {
+.wiki h2 {
 	font-size: 20px;
+}
+
+.wiki h3 {
+	font-size: inherit;
 }
 
 .contextual {
 	font-size: 1rem;
+}
+
+abbr, span.field-description[title] {
+	text-decoration: none;
+}
+
+a.user.locked, a.user.locked:link, a.user.locked:visited {
+	color: $sheffield;
 }
