@@ -50,7 +50,7 @@ textarea {
   a.button:focus,
   select:focus,
   textarea:focus {
-    box-shadow: #81c2dc 0 0 5px 0;
+    box-shadow: #81c2dc 0 0 6px 2px;
     z-index: 1; }
 
 input[type="file"]:focus, input[type="file"]:active,
@@ -75,7 +75,7 @@ input[type="button"] {
   font-size: 16px;
   outline: 0;
   overflow: visible;
-  margin: 0;
+  margin: 0 8px;
   padding: 0 15px;
   line-height: 2;
   border-radius: 5px;
@@ -108,7 +108,8 @@ input[type="button"] {
   input[type="reset"] + a,
   input[type="submit"] + a,
   input[type="button"] + a {
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 4px 8px; }
 
 textarea,
 select,
