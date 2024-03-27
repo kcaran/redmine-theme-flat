@@ -677,9 +677,12 @@ select[multiple="multiple"] {
   border: 0;
   padding: 0; }
 
-/* Don't show jquery-ui tooltips! */
 .ui-tooltip {
-  visibility: hidden; }
+  background: #f9ebb6;
+  color: #51626f;
+  border-radius: 50px;
+  padding: 4px 12px;
+  font-size: 12px; }
 
 table.list td.project {
   max-width: 200px;

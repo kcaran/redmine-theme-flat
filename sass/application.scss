@@ -18,6 +18,7 @@
 }
 
 $atlantic:	#003651;
+$butter: 	#f9ebb6;
 $charcoal:	#394a59;
 $denim:		#0079b6;
 $harbor:	#004c73;
@@ -25,6 +26,7 @@ $heatwave:	#ff7b00;
 $igloo:		#eaf8ff;
 $lemon:		#eaba0a;
 $sheffield:	#697682;
+$shuttle:	#51626f;
 $silver:	#e1e4e6;
 $tomato:	#d92e47;
 $raceway:	#0085c8;
@@ -325,9 +327,12 @@ select[multiple="multiple"] {
     padding: 0;
 }
 
-/* Don't show jquery-ui tooltips! */
 .ui-tooltip {
-	visibility: hidden;
+	background: $butter;
+	color: $shuttle;
+	border-radius: 50px;
+	padding: 4px 12px;
+	font-size: 12px;
 }
 
 table.list td.project {
