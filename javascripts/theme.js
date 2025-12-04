@@ -17,6 +17,7 @@
 
    // Don't display tooltip for Actions menu
    $( 'a[title="Actions"]' ).tooltip( 'disable' );
+   $( '.drdn-items a' ).tooltip( 'disable' );
   });
 
 })(jQuery);
